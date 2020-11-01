@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: #0095dd; */
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(27, 100, 177, 0.604),
+      rgba(0, 2, 1, 0.892)
+    ),
+    url("https://1.bp.blogspot.com/-9GOpPFEb-YA/XmlIzOPL8dI/AAAAAAAAMTM/3njbx0695hUSzXPg5D8Q5_82SGiKsoaGgCLcBGAsYHQ/s1600/arcade-game-wallpaper-4k.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-size: 45px;
+  color: #fff;
+}
+
+canvas {
+  background: rgba(29, 192, 129, 0.7);
+  display: block;
+  border-radius: 5px;
+}
+
+.btn {
+  cursor: pointer;
+  border: 0;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.59);
+  color: #fff;
+  border-radius: 5px;
+}
+.btn:focus {
+  outline: 0;
+}
+.btn:hover {
+  background: rgba(34, 34, 34, 0.583);
+}
+.btn:active {
+  transform: scale(0.97);
+}
+
+.rules-btn {
+  position: absolute;
+  top: 7%;
+  left: 4%;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.rules {
+  position: absolute;
+  background: #f0f0f070;
+  top: 0;
+  left: 0;
+  width: 250px;
+  min-height: 100vh;
+  padding: 20px;
+  line-height: 1.5;
+  transform: translate(-250px);
+  transition: transform 1s ease-in-out;
+}
+.rules.show {
+  transform: translate(0);
+}
+
+.gif {
+  background: #f0f0f0a3;
+  display: block;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  width: 800px;
+}
+.gif.hidden {
+  display: none;
+}
+.gifClass {
+  object-fit: contain;
+}
